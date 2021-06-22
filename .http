@@ -1,0 +1,38 @@
+GET  http://localhost:3000/v1/localhost:3000/v1/product/id/ok HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+
+
+###
+POST   http://localhost:3000/v1/auth/register HTTP/1.1
+content-type: application/json
+
+{
+    "email": "one@one.com",
+    "username": "one@one.com",
+    "password":"one@one.com"
+}
+
+###
+POST   http://localhost:3000/v1/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "one@one.com",
+    "password":"one@one.com"
+}
+
+###
+POST   http://localhost:3000/v1/auth/change-password HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjpudWxsLCJ1c2VybmFtZSI6Im9uZUBvbmUuY29tIiwiZW1haWwiOiJvbmVAb25lLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNjI0MzUwNDQ2LCJleHAiOjE2MjY5NDI0NDZ9.l8xgHt88quUoReamQjzjhV9l3rEMw8fK7lkkK1CB7Ps
+
+{
+    "email": "one@one.com",
+    "password":"one@one.com"
+}
